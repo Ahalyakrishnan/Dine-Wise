@@ -1,0 +1,202 @@
+<HTML>
+<HEAD>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+ }
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/27/18/53/drinks-1283608_1280.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+h1{
+    text-align: center;
+    padding: 20px;
+	left:10%;
+}
+h2{
+    text-align: center;
+    padding: 20px;   
+	
+} 
+.register
+{
+    
+        background-color:black ;
+        width: 500px;
+        margin: 0px 0px 0px 450px;
+        color: white;
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 10px;
+}
+#register{
+    margin-left: 50px;
+}
+label{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+}
+#name{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0px;
+    padding: 7px;
+}
+#ph{
+    width: 65px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+#num{
+    width: 230px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+#sub{
+    width: 200px;
+    padding: 7px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-style: normal;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+a:link, a:visited {
+  background-color: green;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #82b74b;
+}
+ </style>
+ <script type="text/javascript">
+function validate()
+   {
+var cnum=document.getElementById("cnum");
+var exnum=document.getElementById("exnum");
+var namec=document.getElementById("namec");
+var nameb=document.getElementById("nameb");
+var name=document.getElementById("name");
+var num=document.getElementById("num");
+var address=document.getElementById("address");
+if(name.value.trim()=="")
+{
+alert('name is required');
+name.style.border = "2px solid red";
+document.getElementById('name').style.color = "red";
+return false;
+}
+if(num.value.trim()=="")
+{
+alert('phone number is required');
+num.style.border = "2px solid red";
+document.getElementById('num').style.color = "red";
+return false;
+}
+
+if(num.value.length<10)
+{
+alert('enter a valid number of 10 digits');
+num.style.border= "2px solid red";
+document.getElementById('num').style.color = "red";
+return false;
+}
+if(address.value.trim()=="")
+{
+alert('address is required');
+phnum.style.border= "2px solid red";
+document.getElementById('address').style.color = "red";
+return false;
+}
+if(cnum.value.trim()=="")
+{
+alert('card number is required');
+cnum.style.border = "2px solid red";
+document.getElementById('cnum').style.color = "red";
+return false;
+}
+if(exnum.value.trim()=="")
+{
+alert('expiration month and year is required');
+exnum.style.border = "2px solid red";
+document.getElementById('exnum').style.color = "red";
+return false;
+}
+if(namec.value.trim()=="")
+{
+alert('name of card holder  is required');
+namec.style.border = "2px solid red";
+document.getElementById('namec').style.color = "red";
+return false;
+}
+if(nameb.value.trim()=="")
+{
+alert('name of bank issuing is required');
+nameb.style.border = "2px solid red";
+document.getElementById('nameb').style.color = "red";
+return false;
+}
+
+}
+</script>
+ </HEAD>
+<BODY>
+<div class = "register">
+<FORM  method="post" id="register" onsubmit="return validate();" action="submit1.html">
+<h2>Delivery Information</h2>
+<label> Name: </label><br>
+          <input type="text" name="Fname" id="name"
+          placeholder="Enter your First name"><br><br>
+         
+          <label> Mobile Number: </label><br>
+          <select id="ph">
+            <option>+91</option>option>
+            <option>+99</option>option>
+            <option>+10</option>option>
+            <option>+30</option>option>
+            <option>+20</option>option>
+           </select>
+           <input type="number" name="Mnum" id="num"
+          placeholder="Enter your mobile number"><br><br> 
+<label>Address</label><br>
+ <textarea name="address" rows="5" cols="39" placeholder="your address" id="address"></textarea><br><br> 
+<h2>Credit Card Information</h2><br>
+		  <label>Card number:</label><br>
+		  <input type="number" name="cnum" id="cnum"><br><br>
+		  <label>Expiration date ( mo/yr ):</label><br>
+		  <input type="text" name="exnum" id="exnum"><br><br>
+		  <label>Name of the card holder:</label><br>
+		  <input type="text" name="namec" id="namec"><br><br>
+		  <label>Name of bank issuing card:</label><br>
+		  <input type="text" name="nameb" id="nameb"><br><br>
+		  <h4>TERMS AND CONDITIONS</h4><br>
+		  <p><pre>For party reservation to be reserved.
+the credit card holdermust provide the 
+above reservation and credit card 
+information.Card holder should agree 
+to charge "no show" fee of $15.00 per 
+persom,if the reservation is not 
+cancelled 72 hours prior to the time 
+of the reservation.</pre></p><br><br><br>
+ <input type="submit" value="PLACE AN ORDER">
+
+</form>
+</div>
+</body>
+</html>	
