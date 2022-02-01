@@ -6,6 +6,7 @@
   sugars that might be seriously dangerous to him.
   -  This website also helps the customers to reserve the table for their number of guests and order food online.
   -  To develop this website, HTML, CSS and Java Script are used.
+  
 Project Output : https://youtu.be/o5vHwZdno1E
   
 
